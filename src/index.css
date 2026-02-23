@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Noto Serif SC", serif;
+  --font-cursive: "Ma Shan Zheng", cursive;
+}
+
+body {
+  background-color: #fdfcf0;
+  color: #2d2d2d;
+  overflow: hidden;
+}
+
+.chinese-border {
+  border: 4px double #b91c1c;
+  padding: 4px;
+  position: relative;
+}
+
+.chinese-border::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  border: 1px solid #b91c1c;
+  pointer-events: none;
+}
